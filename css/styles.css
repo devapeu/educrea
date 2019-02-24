@@ -6773,6 +6773,7 @@ figure.is-row {
 div[role="categories-grid"] .card-content {
   height: 200px;
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
