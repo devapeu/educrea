@@ -6870,6 +6870,9 @@ div[role="categories-grid"] .tile.is-child:hover .hover-icon {
   transition: 0.25s ease all;
   display: block; }
 
+.box-space {
+  margin: 20px 0; }
+
 #navbar-bottom {
   display: none; }
 
