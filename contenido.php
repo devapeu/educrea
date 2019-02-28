@@ -1,82 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<title>Educrea</title>
-</head>
-<body>
-	<header class="header">
-		<div class="header-top">
-			<div class="container">
-				<nav class="navbar">
-					<div class="navbar-brand"><a href="index.html" class="navbar-item"><img src="img/educrea.png" alt="Educrea"></a></div>
-					<div class="navbar-menu">
-						<div class="navbar-start">
-							<a href="index.html#nosotros" class="navbar-item">Nosotros</a>
-							<a href="index.html#soluciones" class="navbar-item" id="soluciones-educativas-innovadoras">Soluciones Educativas Innovadoras</a>
-							<a href="index.html#canales" class="navbar-item">Canales de Venta</a>
-							<a href="index.html#contacto" class="navbar-item">Contacto</a>
-						</div>
-						<div class="navbar-end">
-							<div class="navbar-item">t. (01) <b>644 9400</b></div>
-						</div>
-					</div>
-				</nav>
-			</div>
-		</div>
-		<div class="header-bottom has-background-dark" id="navbar-bottom">
-			<div class="container">
-				<div class="navbar is-dark">
-					<div class="navbar-menu">
-						<div class="navbar-start">
-							<a href="infraestructura.html" class="navbar-item" >Infraestructura Tecnológica</a>
-							<a href="contenido.html" class="navbar-item" >Contenido y Aplicaciones</a>
-							<a href="capacitacion.html" class="navbar-item" >Capacitación y Asesoría para Docentes</a>
-							<a href="preventa.html" class="navbar-item" >Servicios Pre-Venta</a>
-							<a href="postventa.html" class="navbar-item" >Servicios Post-Venta</a>
-							<a href="financieros.html" class="navbar-item" >Servicios Financieros y Logísticos</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+<?php include 'include/header.php' ?>
 	<main class="main">
 		<section class="section">
 			<div class="container">
-				<!--
-				<h1 class="has-text-centered title">Categorías de producto</h1>
-				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut provident, reprehenderit autem fuga earum id accusamus, aliquam unde temporibus perspiciatis!</p>
-				-->
 				<div role="categories-grid">
 					<div class="tile is-ancestor has-no-margin">
 						<div class="tile is-parent">
-							<a href="categoria.html" class="tile is-child card">
+							<a href="categoria.php" class="tile is-child card">
 								<div class="card-content">
-									<!--<p>Ver productos en:</p>-->
-									<h2 class="title is-4">Formulación de Proyectos de Inversión Pública</h2>
+									<!-- <p>Ver productos en:</p>-->
+									<h2 class="title is-4">Contenido especializado</h2>
 									<div class="hover-icon"><span class="icon"><i class="fas fa-arrow-right"></i></span></div>
 								</div>
 							</a>
 						</div>  <!-- End Parent -->
 						<div class="tile is-parent">
-							<a href="categoria.html" class="tile is-child card">
+							<a href="categoria.php" class="tile is-child card">
 								<div class="card-content">
-									<!--<p>Ver productos en:</p>-->
-									<h2 class="title is-4">Diagnóstico de la Infraestructura Tecnológica Actual</h2>
+									<!-- <p>Ver productos en:</p>-->
+									<h2 class="title is-4">Contenido curricularizado</h2>
+									<div class="hover-icon"><span class="icon"><i class="fas fa-arrow-right"></i></span></div>
+								</div>
+							</a>
+						</div>  <!-- End Parent -->
+					</div> <!-- End Ancestor -->
+					<div class="tile is-ancestor has-no-margin">
+						<div class="tile is-parent">
+							<a href="categoria.php" class="tile is-child card">
+								<div class="card-content">
+									<!-- <p>Ver productos en:</p>-->
+									<h2 class="title is-4">Contenido libre</h2>
 									<div class="hover-icon"><span class="icon"><i class="fas fa-arrow-right"></i></span></div>
 								</div>
 							</a>
 						</div>  <!-- End Parent -->
 						<div class="tile is-parent">
-							<a href="categoria.html" class="tile is-child card">
+							<a href="categoria.php" class="tile is-child card">
 								<div class="card-content">
-									<!--<p>Ver productos en:</p>-->
-									<h2 class="title is-4">Apoyo a la Fuerza de Venta y Demostraciones a Clientes</h2>
+									<!-- <p>Ver productos en:</p>-->
+									<h2 class="title is-4">Aplicaciones educativas</h2>
 									<div class="hover-icon"><span class="icon"><i class="fas fa-arrow-right"></i></span></div>
 								</div>
 							</a>
