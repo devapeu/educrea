@@ -50,7 +50,8 @@
 					$this_category = get_category($cat);
 					if (get_category_children( $this_category->cat_ID ) != "") {
 						$childcategories = get_categories(array(
-						    'orderyby' => 'name',
+						    'orderyby' => 'description',
+						    'order' => 'DESC',
 						    'hide_empty' => false,
 						    'child_of' => $this_category->cat_ID // This returns all children categories
 						));
