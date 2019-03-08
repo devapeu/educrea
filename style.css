@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i");
+/*
+Theme Name: Educrea
+Theme URI: https://github.com/WordPress/twentynineteen
+Author: Piero del Valle
+Author URI: https://wordpress.org/
+Description: Simple theme to sell tech products.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: educrea
+Tags: 
+
+Includes bulma.css, a super convenient CSS library.
+
+*/
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /* Chrome 10-25, Safari 5.1-6 */
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
@@ -6749,6 +6763,16 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+.container {
+  padding: 0 15px; }
+
+@media screen and (max-width: 420px) {
+  .section, .hero-body {
+    padding: 1rem 0.5rem; }
+  .is-medium {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+
 .header-bottom {
   box-shadow: 0 2px 3px rgba(34, 34, 34, 0.1), 0 0 0 1px rgba(34, 34, 34, 0.1); }
 
@@ -6770,18 +6794,45 @@ figure.is-row {
   display: inline-block;
   margin: 30px 30px 0 0; }
 
-div[role="categories-grid"] .card-content {
-  height: 200px;
+.card-product {
+  height: 270px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.categories {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 200px; }
+
+@media screen and (min-width: 768px) {
+  .categories {
+    flex-direction: row; } }
+
+.category {
+  width: 100%;
+  height: 200px;
+  padding: 0.5rem;
   text-align: center;
+  flex: 1 1 33%; }
+
+@media screen and (min-width: 768px) {
+  .category {
+    width: 33%; } }
+
+.category .carta {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: 0.25s ease all;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-div[role="categories-grid"] .tile.is-child {
-  transition: 0.25s ease all; }
-
-div[role="categories-grid"] .tile.is-child:hover {
+.category .carta:hover {
   transition: 0.25s ease all;
   background: #f9b233; }
 
@@ -6798,18 +6849,16 @@ div[role="categories-grid"] .tile.is-child:hover {
 .button-footer:hover {
   transition: 0.25s ease all;
   color: #ffffff !important;
-  background-color: #f9b233; }
+  background-color: #e82d26; }
 
-#servicios .card {
+.producto .card {
   height: 100%;
-  background: linear-gradient(45deg, #ff8e03 0%, #e82d26 100%); }
+  padding-bottom: 55px; }
 
-#servicios .card-content {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 20rem; }
+.producto .card-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
 
 #contacto .content ul {
   list-style: none; }
@@ -6830,6 +6879,7 @@ div[role="categories-grid"] .tile.is-child:hover {
 
 .is-offset {
   position: relative;
+  z-index: 99;
   top: 50px; }
 
 .has-background-gradient, .is-gradient {
@@ -6858,9 +6908,13 @@ div[role="categories-grid"] .tile.is-child:hover {
 
 .wrapped-list .level-item {
   margin-top: 2rem;
-  flex: 33.3%;
+  flex: 100%;
   align-items: center;
   flex-direction: column; }
+
+@media screen and (min-width: 420px) {
+  .wrapped-list .level-item {
+    flex: 33.3%; } }
 
 .hover-icon {
   transition: 0.25s ease all;
@@ -6881,7 +6935,7 @@ div[role="categories-grid"] .tile.is-child:hover .hover-icon {
 
 .main-map {
   overflow: hidden;
-  padding-bottom: 30.25%;
+  padding-bottom: 40.25%;
   position: relative;
   height: 0; }
 
@@ -6891,4 +6945,4 @@ div[role="categories-grid"] .tile.is-child:hover .hover-icon {
   height: 100%;
   width: 100%;
   position: absolute;
-  z-index: -99; }
+  z-index: 0; }

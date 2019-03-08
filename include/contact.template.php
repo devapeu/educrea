@@ -1,4 +1,4 @@
-		<section class="section has-text-white" id="contacto" style="background: url(img/hero_image.png); background-size: cover; background-position: center;">
+		<section class="section has-text-white" id="contacto" style="background: url(<?php echo get_template_directory_uri();?>/img/hero_image.png); background-size: cover; background-position: center;">
 			<div class="container">
 				<div class="columns is-offset">
 					<div class="column">
@@ -42,9 +42,7 @@
 								</span> 950 421 981
 							</div>
 							<h5 class="has-text-white">Visítanos en:</h5>
-							<ul>
-								<li><span class="icon has-text-white"><i class="fas fa-map-marker-alt"></i></span>   Av. República de Panamá 3563 - Oficina 101 | San Isidro</li>
-							</ul>
+							<p><span class="icon has-text-white"><i class="fas fa-map-marker-alt"></i></span>   Av. República de Panamá 3563 - Oficina 101 | San Isidro</p>
 						</div>
 					</div>
 					<div class="column">
@@ -72,6 +70,7 @@
 												<textarea name="message" class="textarea" noresize placeholder="Su mensaje..."></textarea>
 											</div>
 										</div>
+										<input type="hidden" name="birthday">
 										<div class="field">
 											<div class="control">
 												<input type="submit" value="Enviar" class="button is-fullwidth is-gradient">

@@ -1,10 +1,10 @@
 {
   "name": "web_tc",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss style.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch"
   },
